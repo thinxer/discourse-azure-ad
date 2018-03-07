@@ -15,7 +15,7 @@ class AzureOAuth2Authenticator < ::Auth::OAuth2Authenticator
                       :client_id => GlobalSetting.azure_client_id,
                       :client_secret => GlobalSetting.azure_client_secret
                       :tenant_id => GlobalSetting.azure_tenant_id
-                      :baze_azure_url => GlobalSetting.azure_baze_url
+                      :base_azure_url => GlobalSetting.azure_base_url
   end
 
   def after_authenticate(auth)
