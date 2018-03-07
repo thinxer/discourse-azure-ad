@@ -13,8 +13,8 @@ class AzureOAuth2Authenticator < ::Auth::OAuth2Authenticator
     omniauth.provider :azure_oauth2,
                       :name => 'azure_oauth2',
                       :client_id => GlobalSetting.azure_client_id,
-                      :client_secret => GlobalSetting.azure_client_secret
-                      :tenant_id => GlobalSetting.azure_tenant_id
+                      :client_secret => GlobalSetting.azure_client_secret,
+                      :tenant_id => GlobalSetting.azure_tenant_id,
                       :base_azure_url => GlobalSetting.azure_base_url
   end
 
